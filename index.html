@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;            
+        }
+        h1{
+            border: 5px dashed;
+            background-color: aquamarine;
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+            ;
+        }
+        #display{
+            width: 150px;
+            height: 140px;
+            border: 1px solid;
+        }
+    </style>
+
+    <link rel="stylesheet" href="akonDesign.css">
+    
+</head>
+<body>
+    <!-- <h1 class="title1 sample" id="">Hello World</h1>
+    <h2 id="title2">sample</h2> -->
+
+    <h2>My first JavaScript</h2>
+
+    <button onclick="document.getElementById('display').innerHTML = Date()">Display Date</button>
+
+    <button onclick="document.getElementById('display').style.backgroundColor
+     = 'green'">Change background-color</button>
+
+    <p id="display"></p>
+
+
+
+<!-- <script>
+    document.getElementById('display').innerHTML = "Sample JS script";
+    document.getElementById('display').style.backgroundColor = 'orange';
+    document.getElementById('display').style.color = 'white';
+</script> -->
+<script src="sample.js"></script>
+</body>
+</html>

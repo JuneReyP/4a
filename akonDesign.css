@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.title1{
+    color: red;
+}
+#title2{
+    color: yellow;
+}
+
+.sample{
+    height: 150px;
+}
+
+
+nav{
+    margin-bottom: 15px;
+}
+.left{
+    background-color: gray;
+    padding: 10px;
+}
+.main{
+    background-color: yellowgreen;
+    padding: 10px;
+}
+.rigth{
+    background-color: green;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    margin-bottom: 25px;
+    height: 85vh;
+}
+/* mobile view */
+@media screen and (max-width: 850px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+/* desktop view */
+@media screen and (max-width: 600px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
