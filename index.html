@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: gray;            
+        body {
+            background-color: gray;
         }
-        h1{
-            border: 5px dashed;
+
+        h1 {
+            /* border: 5px dashed; */
             background-color: aquamarine;
             padding: 15px;
             margin: 0;
             text-align: center;
             ;
         }
-        #display{
+
+        #display {
             width: 150px;
             height: 140px;
             border: 1px solid;
         }
+
+        .alrt {
+            text-align: center;
+        }
+
+        .alrt button {
+            font-size: larger;
+        }
     </style>
 
     <link rel="stylesheet" href="akonDesign.css">
-    
+
 </head>
+
 <body>
     <!-- <h1 class="title1 sample" id="">Hello World</h1>
     <h2 id="title2">sample</h2> -->
@@ -35,18 +47,62 @@
 
     <button onclick="document.getElementById('display').innerHTML = Date()">Display Date</button>
 
-    <button onclick="document.getElementById('display').style.backgroundColor
-     = 'green'">Change background-color</button>
+    <button onclick="bgChangeColor()">Change background-color</button>
 
     <p id="display"></p>
+    <h1 id="sum" style="text-align: center;"></h1>
+    <h1 id="obj" style="text-align: center;"></h1>
+    <h1 id="ary" style="text-align: center;"></h1>
+    <div class="alrt">
 
+        <h1>Input a month: <input id="textbox_data" oninput="getData()" /></h1>
+        <h1 id="month"></h1>
 
+        <button onclick="myFunction()">Confirm Box</button>
 
-<!-- <script>
+        <h1 id="demo"></h1>
+
+        
+    </div>
+    <script>
+        function getData() {
+            var output_data = document.getElementById('textbox_data').value; //input data
+
+            let month = output_data; //store the input data
+            let text_out;
+            switch (month.toLowerCase()) {
+                case 'january':
+                case 'march':
+                case 'may':
+                case 'july':
+                case 'august':
+                case 'october':
+                case 'december':
+                text_out = month + ' has 31 days!';
+                    break;
+                case 'april':
+                case 'june':
+                case 'september':
+                case 'november':
+                text_out = month + ' has 30 days!';
+                    break;
+                case 'february':
+                text_out = month + ' has 28 days only!';
+                    break;
+                default:
+                    text_out = month + ' is not on the list!';
+            }
+            document.getElementById('month').innerHTML = text_out;
+
+        }
+    </script>
+
+    <!-- <script>
     document.getElementById('display').innerHTML = "Sample JS script";
     document.getElementById('display').style.backgroundColor = 'orange';
     document.getElementById('display').style.color = 'white';
 </script> -->
-<script src="sample.js"></script>
+    <script src="sample.js"></script>
 </body>
+
 </html>
