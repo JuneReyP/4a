@@ -282,3 +282,17 @@ while(a < fruits.length){
     console.log(fruits[a]);
 }
 
+
+// var fruits = ['avocado', 'banana', 'apple', 'mango', 'kiat2'];
+
+// let a = 0;
+// //while loop
+// // while(a < fruits.length){
+// //     console.log(fruits[a]);
+// //     a++;
+// //}
+
+// //for IN
+// for(let fruit in fruits){
+//   console.log(fruits[fruit]);
+// }
