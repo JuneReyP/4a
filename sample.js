@@ -296,3 +296,32 @@ while(a < fruits.length){
 // for(let fruit in fruits){
 //   console.log(fruits[fruit]);
 // }
+
+
+
+// var fruits = ['avocado', 'banana', 'apple', 'mango', 'kiat2'];
+
+// let a = 0;
+// //while loop
+// // while(a < fruits.length){
+// //     console.log(fruits[a]);
+// //     a++;
+// //}
+
+// //for IN
+// for(let fruit in fruits){
+//   console.log(fruits[fruit]);
+// }
+
+/* Activity
+  1. Write a code that will determine the days of a month. (Using switch case statement)
+  2. Write a code that will classify the grades by:
+    A = 91 - 100
+    B = 86 - 90
+    C = 81 - 85
+    D = 75 - 80
+    E = 74 below
+    
+    Using if-elseif-else
+  3. Create a simple calculator using switch-case statement
+  */
